@@ -3,6 +3,9 @@ name: Prod Front1 CI
 on:
   push:
     branches: [ master ]
+    paths:
+      - "front1/**"
+      - ".github/workflows/front1_production.yml"
   pull_request:
     branches: [ master ]
     paths:
