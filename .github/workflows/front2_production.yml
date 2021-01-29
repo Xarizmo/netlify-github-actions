@@ -30,7 +30,8 @@ jobs:
     - run: npm install -g yarn
     - name: yarn install, build, and test
       run: |
-        cd front2 && yarn install
+        cd front2
+        yarn install
         yarn build
         yarn test
     - name: Deploy to netlify

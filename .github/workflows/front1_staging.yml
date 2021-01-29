@@ -30,6 +30,7 @@ jobs:
     - run: npm install -g yarn
     - name: yarn install, build, and test
       run: |
+        cd front1
         yarn install
         yarn build
         yarn test
@@ -39,5 +40,5 @@ jobs:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.DEV_NETLIFY_SITE_ID }}
       with:
-        args: deploy --dir=build --prod
+        args: deploy --dir="front1/build" --prod
         secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
