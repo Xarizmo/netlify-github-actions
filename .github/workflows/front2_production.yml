@@ -31,8 +31,8 @@ jobs:
     - name: yarn install, build, and test
       run: |
         cd front2 && yarn install
-        cd front2 && yarn build
-        cd front2 && yarn test
+        yarn build
+        yarn test
     - name: Deploy to netlify
       uses: netlify/actions/cli@master
       env:
