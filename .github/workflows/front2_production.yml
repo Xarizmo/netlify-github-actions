@@ -3,13 +3,13 @@ name: Prod Front2 CI
 on:
   push:
     branches:
-      - master
+      - 'master'
     paths:
       - "front2/**"
       - ".github/workflows/front2_production.yml"
   pull_request:
     branches:
-      - master
+      - 'master'
     paths:
       - "front2/**"
       - ".github/workflows/front2_production.yml"

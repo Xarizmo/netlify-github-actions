@@ -3,13 +3,13 @@ name: Dev Front2 CI
 on:
   push:
     branches:
-      - develop
+      - 'develop'
     paths:
       - "front2/**"
       - ".github/workflows/front2_staging.yml"
   pull_request:
     branches:
-      - develop
+      - 'develop'
     paths:
       - "front2/**"
       - ".github/workflows/front2_staging.yml"
