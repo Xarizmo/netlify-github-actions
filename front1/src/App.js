@@ -18,6 +18,15 @@ function App() {
         >
           Learn React
         </a>
+        <hr />
+        <button
+          onClick={() => {
+            throw new Error("Smth went wrong");
+          }}
+        >
+          Break the world
+        </button>
+        ;
       </header>
     </div>
   );
