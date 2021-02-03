@@ -26,7 +26,6 @@ function App() {
         >
           Break the world
         </button>
-        ;
       </header>
     </div>
   );
